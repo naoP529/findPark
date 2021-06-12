@@ -1,25 +1,61 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href=".css">
+    <link href="style.css">
 </head>
+
 <body>
     <header>
-        <h1>横須賀公園探知機</h1>   
+        <h1>横須賀公園探知機</h1>
     </header>
     <main>
         <input type="text" id="text01" value="ここに入力して検索">
         <h2>条件</h2>
-        <button>サッカー</button>
-        <button>野球</button>
-        <button>ペット</button>
-        <button>遊具</button>
+        <form id="water" class="condition">
+            <h3>水飲み・手洗い</h1>
+                <label><input type="radio" name="water_button" value=>あり</label>
+                <label><input type="radio" name="water_button" value=>なし</label>
+                <label><input type="radio" name="water_button" value=null>指定なし</label>
+        </form>
+        <form id="toilet" class="condition">
+            <h3>トイレ</h3>
+            <label><input type="radio" name="toilet_button">あり</label>
+            <label><input type="radio" name="toilet_button">多目的トイレあり</label>
+            <label><input type="radio" name="toilet_button">なし</label>
+            <label><input type="radio" name="toilet_button" value=null>指定なし</label>
+        </form>
+        <form id="soccer" class="condition">
+            <h3>サッカー</h3>
+            <label><input type="radio" name="soccer_button" value=>可</label>
+            <label><input type="radio" name="soccer_button" value=>不可</label>
+            <label><input type="radio" name="soccer_button" value=null>指定なし</label>
+        </form>
+        <form id="baseball" class="condition">
+            <h3>野球</h3>
+            <label><input type="radio" name="baseball_button" value=>可</label>
+            <label><input type="radio" name="baseball_button" value=>不可</label>
+            <label><input type="radio" name="baseball_button" value=null>指定なし</label>
+        </form>
+        <form id="bench" class="condition">
+            <h3>ベンチ</h3>
+            <label><input type="radio" name="bench_button" value=>あり</label>
+            <label><input type="radio" name="bench_button" value=>なし</label>
+            <label><input type="radio" name="bench_button" value=null>指定なし</label>
+        </form>
+        <form id="pet" class="condition">
+            <h3>ペット</h3>
+            <label><input type="radio" name="pet_button" value=>あり</label>
+            <label><input type="radio" name="pet_button" value=>なし</label>
+            <label><input type="radio" name="pet_button" value=null>指定なし</label>
+        </form>
         <h2>マップ</h2>
         <img id="map-ing" src="qrcode_www.google.co.jp.png">
     </main>
 </body>
+
 </html>
